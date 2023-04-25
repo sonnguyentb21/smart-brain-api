@@ -1,5 +1,5 @@
 {
-  "name": "node",
+  "name": "smart-brain-backend",
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
