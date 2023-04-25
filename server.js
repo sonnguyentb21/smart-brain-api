@@ -6,6 +6,7 @@ const knex = require('knex');
 const dotenv = require('dotenv');
 
 dotenv.config();
+const port = process.env.APP_PORT;
 
 
 const register = require('./controllers/register');
@@ -42,6 +43,6 @@ app.put('/image', (req, res) => { image.handleImage(req, res, db)})
 app.post('/imageUrl', (req, res) => { image.handleApiCall(req, res)})
 
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Server listening on port ${process.env.PORT}`);
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
 })
