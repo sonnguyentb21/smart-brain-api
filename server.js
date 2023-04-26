@@ -18,10 +18,10 @@ const db = knex({
   // connect to your own database here:
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
-    user : 'postgres',
-    password : 'sontb',
-    database : 'smart-brain'
+    host : 'john.db.elephantsql.com',
+    user : 'qvricmgs',
+    password : '4ThXBPfFullmcZW7PoAhxERCovyrsoKm',
+    database : 'qvricmgs'
   }
 });
 
